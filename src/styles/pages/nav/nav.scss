@@ -1,0 +1,90 @@
+.nav-logo img {
+  width: 9.75rem;
+  height: 2.8rem;
+}
+
+.nav-wrapper {
+  height: 86px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  grid-template-areas: "nav-logo nav-logo . . . . nav-list nav-list nav-list nav-list nav-list nav-btn";
+  .nav-logo {
+    grid-area: nav-logo;
+    margin-bottom: 11px;
+  }
+  .nav-items {
+    grid-area: nav-list;
+    ul li {
+      line-height: 24px;
+      font-weight: 400;
+    }
+  }
+  .nav-btn-languages {
+    grid-area: nav-btn;
+    width: 4.75rem;
+    height: 2rem;
+    border: 1px solid $borderColor;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $btnColor;
+      transition: background-color 0.3s ease;
+    }
+  }
+}
+.nav-items-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: end;
+}
+footer {
+  background-color: $primaryColor;
+  padding-top: 40px;
+  a {
+    color: white;
+  }
+  .nav-wrapper {
+    position: relative;
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      top: 94px;
+      background-color: $borderColor;
+    }
+  }
+}
+.footer-rights {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr 2fr 2fr;
+  grid-template-areas: ". text text1 text2 .";
+  margin-top: 34px;
+  padding-bottom: 20px;
+  span {
+    color: $borderColor;
+    font-weight: 400;
+    &:first-child {
+      grid-area: text;
+      align-self: center;
+      justify-self: center;
+    }
+    &:nth-child(2) {
+      grid-area: text1;
+      align-self: center;
+      justify-self: center;
+    }
+    &:last-child {
+      grid-area: text2;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}

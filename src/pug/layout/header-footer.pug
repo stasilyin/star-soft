@@ -1,13 +1,42 @@
+mixin navLink(link, name)
+	li 
+		a(href=link).header-nav-link=name
+
 block variables
 
 doctype html 
 html(lang = 'en')
-    head 
-        title= nameTitle
-    body
-        header 
-            div.container
-                div.logo
-                    img(src='../assets/images')
-
-        block content  
+	head 
+		title= nameTitle
+	body
+		header 
+			div.container
+				div(class= 'nav-wrapper')
+					div(class= 'nav-logo')
+						img(src=require('../../assets/images/logoHeader.png').default, alt='star soft')
+					nav.nav-items
+						ul.nav-items-list
+							+navLink('#','Services')
+							+navLink('#','Partners')
+							+navLink('#','About us')
+							+navLink('#','Careers')
+					div.nav-btn-languages
+							a(href='#' class = 'nav-btn-languages-en') En
+		block content
+		footer
+			div.container
+				div(class= 'nav-wrapper')
+					div(class= 'nav-logo')
+						img(src=require('../../assets/images/logoFooter.png').default, alt='star soft')
+					nav.nav-items
+						ul.nav-items-list
+							+navLink('#','Services')
+							+navLink('#','Partners')
+							+navLink('#','About us')
+							+navLink('#','Careers')
+					div.nav-btn-languages
+							a(href='#') En
+				div.footer-rights
+					span © 2021 5 Stars Soft, All Rights Reserved
+					span Privacy Policy
+					span Terms of Use

@@ -1,12 +1,21 @@
-$primaryColor: #1D242D;
-$btnColor: #038BF3;
-$borderColor: #C6C6C6;
+$primaryColor: #1d242d;
+$btnColor: #038bf3;
+$borderColor: #c6c6c6;
+$whiteColor: white;
 
-
-html, body, h1, h2, h3, h4, h5, h6 {
+*,
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
   margin: 0;
   padding: 0;
-  font-family: 'SFUIText', sans-serif;
+  font-family: "SFUIText", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
   color: $primaryColor;
@@ -16,5 +25,10 @@ html, body, h1, h2, h3, h4, h5, h6 {
   width: 83%;
   margin: 0 auto;
 }
+li {
+  list-style-type: none;
+}
 
-
+a {
+  text-decoration: none;
+}

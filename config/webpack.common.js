@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     styles: path.resolve(__dirname, '../src/styles/index.scss'),
     index: path.resolve(__dirname, '../src/pug/pages/index.pug'),
+    services: path.resolve(__dirname, '../src/pug/pages/services.pug'),
     app: path.resolve(__dirname, '../src/js/index.js'),
   },
   output: {
@@ -39,6 +40,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/pug/pages/index.pug'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'services.html',
+      template: path.resolve(__dirname, '../src/pug/pages/services.pug'), 
     }),
     new MiniCssExtractPlugin({
       filename: 'styles/[name].[hash].css',

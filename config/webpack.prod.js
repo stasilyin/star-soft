@@ -13,7 +13,7 @@ module.exports = merge(webpackConfigBase, {
         loader: 'file-loader',
         options: {
           name: 'assets/images/[hash].[ext]',
-          publicPath: '/',
+          publicPath: './',
         },
       },
     ],

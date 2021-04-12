@@ -13,10 +13,10 @@ html(lang = 'en')
 			div.container
 				div(class= 'nav-wrapper')
 					div(class= 'nav-logo')
-						img(src=require('../../assets/images/logoHeader.png').default, alt='star soft')
+						a(href='index.html'): img(src=require('../../assets/images/logoHeader.png').default, alt='star soft')
 					nav.nav-items
 						ul.nav-items-list
-							+navLink('#','Services')
+							+navLink('services.html','Services')
 							+navLink('#','Partners')
 							+navLink('#','About us')
 							+navLink('#','Careers')
@@ -27,7 +27,7 @@ html(lang = 'en')
 			div.container
 				div(class= 'nav-wrapper')
 					div(class= 'nav-logo')
-						img(src=require('../../assets/images/logoFooter.png').default, alt='star soft')
+						a(href='index.html'): img(src=require('../../assets/images/logoFooter.png').default, alt='star soft')
 					nav.nav-items
 						ul.nav-items-list
 							+navLink('#','Services')

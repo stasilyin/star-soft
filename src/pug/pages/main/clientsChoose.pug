@@ -1,0 +1,14 @@
+- var textBlock = { text1:'We help our clients focus for their business We help our clients focus for their business', text2:'We build fruitfully, for a long time, and transparent relationship with our clients', text3:'Our team finds an approach to each client and develops projects quickly and on time'}
+
+section.clients-choose
+  .container
+    .title 
+      h2 Why clients choose us
+    .clients-choose__content-wrap
+      each value, key in textBlock
+        .clients-choose__content
+          .clients-choose__content-item
+            .clients-choose__content-item__img
+              include ../../../assets/images/clockFire.svg
+            .clients-choose__content-item__text
+              p= value

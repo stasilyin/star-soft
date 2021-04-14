@@ -1,0 +1,35 @@
+.clients-choose__content-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-choose__content {
+  width: 24rem;
+  height: 19.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-item {
+    width: 19rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+      width: 18rem;
+      height: 4rem;
+      text-align: center;
+      margin-top: 1.25rem;
+      p {
+        cursor: default;
+      }
+    }
+  }
+}
+.clients-choose__content:hover {
+  transform: scale(1.1);
+  border-radius: 50px;
+  box-shadow: 4px 5px 20px rgba(220, 220, 220, 0.5);
+  backdrop-filter: blur(30px);
+  transition: all 0.3s;
+}

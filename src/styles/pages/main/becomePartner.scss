@@ -1,0 +1,22 @@
+.become-partner {
+  background: url("../assets/images/becomePartner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0;
+  .title {
+    margin-bottom: 1.9rem;
+  }
+  h2 {
+    color: $whiteColor;
+  }
+  &__content {
+    width: 45rem;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      color: $whiteColor;
+      margin-bottom: 1.9rem;
+    }
+  }
+}

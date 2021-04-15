@@ -1,0 +1,18 @@
+.partners {
+  padding-top: 0;
+  &-content {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    align-items: center;
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 26rem;
+      height: 10rem;
+      box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.3);
+      border-radius: 20px;
+    }
+  }
+}

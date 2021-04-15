@@ -19,6 +19,11 @@
     ul li {
       line-height: 24px;
       font-weight: 400;
+      a:hover,
+      a:active {
+        color: $btnColor;
+        transition: all 0.3s;
+      }
     }
   }
   .nav-btn-languages {

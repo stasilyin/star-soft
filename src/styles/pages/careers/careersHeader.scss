@@ -1,0 +1,33 @@
+.careers-header {
+  background-image: url("../assets/images/careersHeader.png");
+  height: calc(100vh - 86px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    h1 {
+      line-height: 85%;
+      padding-left: 1rem;
+      background: linear-gradient(79.3deg, #038bf3, #01d0a5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #038bf3;
+      span {
+        line-height: 85%;
+        margin-top: 0;
+        margin-left: 30rem;
+        color: $whiteColor;
+        background: transparent;
+        -webkit-background-clip: border-box;
+        -webkit-text-fill-color: currentColor;
+        &::before {
+          margin-left: -0.5rem;
+          margin-top: -2.5rem;
+        }
+      }
+    }
+  }
+}

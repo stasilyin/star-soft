@@ -1,7 +1,17 @@
 .be-creative {
-  background-image: url("../assets/images/headerPhoto.jpg");
+  background-image: url("../assets/images/headerPhoto.png");
   height: calc(100vh - 86px);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  &__content {
+    width: 42.5rem;
+    margin: 0 auto;
+    &-text {
+      color: $whiteColor;
+      text-align: center;
+      margin-top: 1rem;
+      padding-bottom: 1.6rem;
+    }
+  }
 }

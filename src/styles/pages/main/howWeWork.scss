@@ -1,0 +1,69 @@
+.how-we-work {
+  padding-bottom: 0;
+}
+.how-we-work-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.how-we-work-content {
+  display: flex;
+  justify-content: center;
+  &-img {
+    width: 31rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 9.6rem;
+    }
+  }
+}
+.how-we-work__line__circle {
+  width: 4.4rem;
+  height: 4.4rem;
+  box-shadow: 4px 5px 20px rgba(220, 220, 220, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 30px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: $whiteColor;
+}
+.how-we-work__line {
+  width: 2px;
+  background-color: #ebebeb;
+  height: 100%;
+  text-align: center;
+  margin-left: 50%;
+}
+.how-we-work__content-line-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.how-we-work__content-text {
+  padding-left: 4.8rem;
+  overflow: hidden;
+  h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .button {
+    float: left;
+  }
+  &-wrap {
+    margin: 1.9rem 0;
+    p {
+      word-break: break-all;
+      white-space: normal;
+    }
+  }
+}
+.how-we-work-content-wrapper img[alt="MainTenance"] {
+  margin-bottom: 0;
+}
+.how-we-work__line.MainTenance {
+  display: none;
+}

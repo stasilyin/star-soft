@@ -1,0 +1,26 @@
+mixin addCard(url,number,title,text, nameButton)
+  .how-we-work-content
+    .how-we-work-content-img
+      img(src=url, alt=title)
+    .how-we-work__content-line-wrapper
+      .how-we-work__line__circle=number
+      .how-we-work__line(class= title)
+    .how-we-work__content-text 
+      h3=title 
+      .how-we-work__content-text-wrap
+        p=text
+      if nameButton
+        .button=nameButton
+
+
+section.how-we-work
+  .container
+    .title 
+      h2 how we work
+    .how-we-work-content-wrapper
+      +addCard(require('../../assets/images/work3.png').default, '01','Project estimation','loremloremloremloremloremloremloremloremloremloremlorem', 'free estimation')
+      +addCard(require('../../assets/images/work2.png').default, '02','ui/ux Design','loremloremloremloremloremloremloremloremloremloremlorem')
+      +addCard(require('../../assets/images/work1.png').default, '03','Implementation','loremloremloremloremloremloremloremloremloremloremlorem')
+      +addCard(require('../../assets/images/work3.png').default, '04','Testing','loremloremloremloremloremloremloremloremloremloremlorem', 'free estimation')
+      +addCard(require('../../assets/images/work2.png').default, '05','Deployment','loremloremloremloremloremloremloremloremloremloremlorem')
+      +addCard(require('../../assets/images/work1.png').default, '06','MainTenance','loremloremloremloremloremloremloremloremloremloremlorem')

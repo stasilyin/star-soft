@@ -1,0 +1,27 @@
+.partners-header {
+  background-image: url("../assets/images/partnersHeader.png");
+  height: calc(100vh - 86px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+      line-height: 85%;
+      letter-spacing: 0;
+      span {
+        line-height: 85%;
+        margin-top: 0;
+        margin-left: 0;
+        letter-spacing: 0;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

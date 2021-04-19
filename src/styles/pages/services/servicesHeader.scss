@@ -16,6 +16,7 @@
       letter-spacing: 0;
       background: linear-gradient(79.3deg, #038bf3, #01d0a5);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       color: #038bf3;
       span {
@@ -26,6 +27,7 @@
         color: $whiteColor;
         background: transparent;
         -webkit-background-clip: border-box;
+        background-clip: border-box;
         -webkit-text-fill-color: currentColor;
         &::before {
           display: none;

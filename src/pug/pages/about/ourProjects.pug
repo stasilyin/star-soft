@@ -1,0 +1,17 @@
+section.about__our-projects 
+  .container 
+    .title 
+      h2 Our Projects
+    .about__our-projects__sort 
+      each val in ['All', 'Web sites', 'Mobile applications', 'eCommerce', 'IoT', '3D Design + AR']
+        a(href='#').about__our-projects__sort-item=val
+    .about__our-projects__cards 
+      .about__our-projects__cards-item 
+        .about__our-projects__cards-item__img
+          img(src=require("../../../assets/images/roomtour.png").default, alt="roomtour project")
+        .about__our-projects__cards-item__body
+          h3 RoomTOUR
+          p Ideological considerations of a higher order, as well as the constant information and propaganda support of our activities,
+            | require the definition and refinement of the personnel training system that meets the urgent needs.
+            | onstant information and propaganda support of our activit Ideological considerations of a higher order, as well as the strengthening and development of the structure...
+          a(href="#") View 

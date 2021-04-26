@@ -1,0 +1,24 @@
+section.talented 
+  .container 
+    .title
+      h2 We are looking for talented and motivated people
+    .talented__content
+      .talented__content-text 
+        p Our people are the secret behind our success. They are our brand and the reason we provide our customers with the 
+          | smart business and technology solutions that they need to succeed. It’s therefore critical that our team feel valued,
+          | passionate and inspired. Fill the form. 
+      form.talented__content-from(action="#")
+        input(type='text' placeholder='* Name', require)
+        input(type='text' placeholder='* Email', require)
+        input(type='text' placeholder='* Occupation / Skillset', require)
+        .attach-file
+          input(type='text', placeholder='* Attach CV file', require, disabled)
+          label.attach-file-label
+            input(type="file", class = 'attach-file-input')
+            .attach-file-image
+        input(type='text', placeholder='Link to portfolio or Linkedin (optional)', require)
+        input(type='text', placeholder='* Tell us something (optional)', require)
+        .input-policy
+          input(type='checkbox' name = 'policy' require)
+          span I have read the <a href='#'>privacy policy</a> ang agree to it
+        .button Write to us

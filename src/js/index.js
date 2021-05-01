@@ -1,3 +1,1 @@
-const programName = 'Hello, World!';
-
-console.log(programName);
+import Swiper from './swiper-our-project'

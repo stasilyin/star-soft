@@ -1,0 +1,72 @@
+.our-project .title {
+  margin-bottom: 4.4rem;
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 20px;
+  &__content {
+    width: 50%;
+    box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.3);
+    border-radius: 20px;
+    padding: 0 1.5rem;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 4.4rem;
+      margin-bottom: 1.9rem;
+    }
+    a {
+      margin-top: 30px;
+      float: right;
+      color: $btnColor;
+    }
+  }
+  &__img {
+    width: 50%;
+    border-radius: 20px;
+    filter: drop-shadow(4px 5px 20px rgba(172, 172, 172, 0.3));
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+}
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background: no-repeat center url("../assets/images/arrowRight.svg");
+  transform: rotate(180deg);
+  width: 100px;
+}
+.swiper-button-next {
+  background: no-repeat center url("../assets/images/arrowRight.svg");
+  width: 100px;
+}
+.swiper-pagination {
+  position: static;
+  &-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    border: 2px solid #999999;
+    background-color: #fff;
+    &-active {
+      background-color: #038bf3;
+    }
+  }
+}

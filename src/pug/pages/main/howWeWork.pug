@@ -1,4 +1,4 @@
-mixin addCard(url,number,title,text, nameButton)
+mixin addCard(url,number,title,text, nameButton, ref)
   .how-we-work-content
     .how-we-work-content-img
       img(src=url, alt=title)
@@ -8,9 +8,10 @@ mixin addCard(url,number,title,text, nameButton)
     .how-we-work__content-text 
       h3=title 
       .how-we-work__content-text-wrap
-        p=text
+        p!=text
       if nameButton
-        .button=nameButton
+        a(href=ref)
+          .button=nameButton
 
 
 section.how-we-work
@@ -18,9 +19,9 @@ section.how-we-work
     .title 
       h2 how we work
     .how-we-work-content-wrapper
-      +addCard(require('../../assets/images/work3.png').default, '01','Project estimation','loremloremloremloremloremloremloremloremloremloremlorem', 'free estimation')
-      +addCard(require('../../assets/images/work2.png').default, '02','ui/ux Design','loremloremloremloremloremloremloremloremloremloremlorem')
-      +addCard(require('../../assets/images/work1.png').default, '03','Implementation','loremloremloremloremloremloremloremloremloremloremlorem')
-      +addCard(require('../../assets/images/work3.png').default, '04','Testing','loremloremloremloremloremloremloremloremloremloremlorem', 'free estimation')
-      +addCard(require('../../assets/images/work2.png').default, '05','Deployment','loremloremloremloremloremloremloremloremloremloremlorem')
-      +addCard(require('../../assets/images/work1.png').default, '06','MainTenance','loremloremloremloremloremloremloremloremloremloremlorem')
+      +addCard(require('../../assets/images/work3.png').default, '01','Project estimation','This workshop gives us a better idea of how to start building your product and also gives you valuable insight in how your IT solution will work. We’ll create the project scope for a minimum viable product, propose the right technologies to use, prepare a backlog and give you an accurate estimate.', 'free estimation', "#startProject")
+      +addCard(require('../../assets/images/work2.png').default, '02','ui/ux Design','Technical skills and personality goes into the decision. You can review developer C.V.s and meet them before we start. In this phase we also get everyone up to speed and align priorities.')
+      +addCard(require('../../assets/images/work1.png').default, '03','Implementation','During continuous delivery, we’ll release the MVP and get feedback from end-users while still designing, developing and testing the application.')
+      +addCard(require('../../assets/images/work3.png').default, '04','Testing','This way we ensure the highest quality. Since we work with agile methodologies, we set periodic milestones as well as two-week sprints with client involvement.')
+      +addCard(require('../../assets/images/work2.png').default, '05','Deployment','When the project finishes, we’ll also maintain the app throughout its life. Since our team designed it, it will be quicker and easier for us to fix bugs, update versions or integrate it with new tools.')
+      +addCard(require('../../assets/images/work1.png').default, '06','MainTenance','On the other hand, the framework and place of staff training require the definition and refinement of the development model. Allows you to perform important tasks for the development of new proposals.')

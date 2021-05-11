@@ -6,6 +6,7 @@ section.about__our-projects
       each val in ['All', 'Web sites', 'Mobile applications', 'eCommerce', 'IoT', '3D Design + AR']
         a(href='#').about__our-projects__sort-item=val
     .about__our-projects__cards 
+      a(name='portfolio')
       .about__our-projects__cards-item 
         .about__our-projects__cards-item__img
           img(src=require("../../../assets/images/roomtour.png").default, alt="roomtour project")
@@ -15,3 +16,19 @@ section.about__our-projects
             | require the definition and refinement of the personnel training system that meets the urgent needs.
             | onstant information and propaganda support of our activit Ideological considerations of a higher order, as well as the strengthening and development of the structure...
           a(href="#") View 
+      .about__our-projects__cards-item(class='disable')
+        .about__our-projects__cards-item__img
+          img(src=require("../../../assets/images/webSites.png").default, alt="roomtour project")
+      .about__our-projects__cards-item(class='disable')
+        .about__our-projects__cards-item__img
+          img(src=require("../../../assets/images/MobPort.png").default, alt="roomtour project")
+      .about__our-projects__cards-item(class='disable')
+        .about__our-projects__cards-item__img
+          img(src=require("../../../assets/images/iotPort.png").default, alt="roomtour project")
+      .about__our-projects__cards-item(class='disable')
+        .about__our-projects__cards-item__img
+          img(src=require("../../../assets/images/EcomPort.png").default, alt="roomtour project")
+      .about__our-projects__cards-item(class='disable')
+        .about__our-projects__cards-item__img
+          img(src=require("../../../assets/images/3dPort.png").default, alt="roomtour project")
+      

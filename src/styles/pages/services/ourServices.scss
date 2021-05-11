@@ -3,9 +3,16 @@
 }
 .our-services-sort {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 70px;
+  a {
+    margin: 0 3.1rem;
+    &:hover {
+      color: #038bf3;
+      transition: 0.3s;
+    }
+  }
 }
 .card-body-wrapper {
   display: flex;

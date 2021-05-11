@@ -23,8 +23,10 @@
   &__cards-item {
     display: flex;
     gap: 4.3rem;
+    width: 100%;
     background-color: $whiteColor;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.3);
     &__img {
       width: 50%;
@@ -44,6 +46,20 @@
         font-weight: bold;
         font-size: 20px;
       }
+      a {
+        float: right;
+        color: #038bf3;
+        font-weight: bold;
+        margin-top: 30px;
+      }
     }
   }
+}
+.about__our-projects__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.disable {
+  width: 49.3%;
 }

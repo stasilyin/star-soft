@@ -14,29 +14,34 @@ mixin cardServices(title,text, imageURL, services)
 section.our-services-wrapper 
   .container
     .our-services-sort 
-      a(href='#') Web sites
-      a(href='#') Mobile applications
-      a(href='#') eCommerce
-      a(href='#') DevOps
-      a(href='#') IoT
-      a(href='#') 3D Design + AR
-    .card-wrapper 
+      a(href='#web') Web sites
+      a(href='#mob') Mobile applications
+      a(href='#ecom') eCommerce
+      a(href='#dev') DevOps
+      a(href='#iot') IoT
+      a(href='#3d') 3D Design + AR
+    .card-wrapper
+      a(name='web')
       +cardServices('Web sites', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/webSites.png'
-      ).default, [require('../../assets/images/html.png'
-      ).default,require('../../assets/images/html.png'
+      ).default, [require('../../assets/images/tehnologyHtml.png'
       ).default])
+      a(name='mob')
       +cardServices('Mobile Application', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/MobileApplication.png'
       ).default, [require('../../assets/images/tehnologyMob.png'
       ).default])
-      +cardServices('Ecommerce', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/webSites.png'
+      a(name='ecom')
+      +cardServices('Ecommerce', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/eccomerceProject.png'
       ).default, [require('../../assets/images/tehnologyEc.png'
       ).default])
-      +cardServices('DevOps', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/webSites.png'
+      a(name='dev')
+      +cardServices('DevOps', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/devOpsProject.png'
       ).default, [require('../../assets/images/tehnologyDev.png'
       ).default])
-      +cardServices('IoT', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/webSites.png'
+      a(name='iot')
+      +cardServices('IoT', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/iotProject.png'
       ).default, [require('../../assets/images/tehnologyIot.png'
       ).default])
-      +cardServices('3D Design + ar', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/webSites.png'
+      a(name='3d')
+      +cardServices('3D Design + ar', 'Create the best possible apps from scratch or tune up the UX of an existing product. Our designers know how to create interfaces that people use every day and provide the optimum user experience with human-centered focus. Our UX/UI design services focus on creating products that are pleasant to end-users.', require('../../assets/images/3dProject.png'
       ).default, [require('../../assets/images/tehnology3d.png'
       ).default])

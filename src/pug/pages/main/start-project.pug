@@ -1,0 +1,22 @@
+section.start-project
+  .container 
+    .start-project-wrapper
+      .start-project-wrapper__contacts
+        .title 
+          h2 Contacts
+        .start-project-wrapper__contacts-text 
+          span Canada - Otava 
+          span 14 Vozdvyzhenska Street, office 18, 04071
+          span.start-project-wrapper__contacts-text-tel +375 29 955 99 99
+          span input@gmail.com
+      .start-project-wrapper__form
+        .title 
+          h2 Start project
+        form.start-project-content__form(action="#")
+          input(type='text' placeholder='* Name', require)
+          input(type='text' placeholder='* Email', require)
+          input(type='text' placeholder='* Message', require)
+          .input-policy
+            input(type='checkbox' name = 'policy' require)
+            span I have read the <a href='#'>privacy policy</a> ang agree to it
+          .button Write to us

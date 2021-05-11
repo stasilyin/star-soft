@@ -1,0 +1,29 @@
+.start-project {
+  &-wrapper {
+    display: flex;
+    &__contacts {
+      flex-grow: 1.4;
+      margin: 0 auto;
+      .title {
+        justify-content: start;
+      }
+    }
+    &__form {
+      flex-grow: 3;
+    }
+  }
+}
+.start-project-content__form {
+  padding-left: 4rem;
+  .input-policy {
+    margin-bottom: 68px;
+  }
+}
+.start-project-wrapper__contacts-text {
+  display: flex;
+  flex-direction: column;
+  &-tel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

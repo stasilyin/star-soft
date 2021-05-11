@@ -5,9 +5,9 @@ section.about__our-projects
     .about__our-projects__sort 
       each val in ['All', 'Web sites', 'Mobile applications', 'eCommerce', 'IoT', '3D Design + AR']
         a(href='#').about__our-projects__sort-item=val
+    a(name='portfolio')
     .about__our-projects__cards 
-      a(name='portfolio')
-      .about__our-projects__cards-item 
+      .about__our-projects__cards-item(class="active")
         .about__our-projects__cards-item__img
           img(src=require("../../../assets/images/roomtour.png").default, alt="roomtour project")
         .about__our-projects__cards-item__body

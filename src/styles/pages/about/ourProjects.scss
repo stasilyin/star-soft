@@ -56,10 +56,13 @@
   }
 }
 .about__our-projects__cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "active active";
 }
 .disable {
-  width: 49.3%;
+}
+.active {
+  grid-area: active;
 }

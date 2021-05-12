@@ -5,7 +5,7 @@ const webpackConfigBase = require('./webpack.common');
 module.exports = merge(webpackConfigBase, {
   mode: 'development',
   devServer: {
-    port: 8882,
+    port: 8883,
     hot: true,
     open: true,
   },

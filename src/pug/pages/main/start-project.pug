@@ -14,10 +14,10 @@ section.start-project
         .title 
           h2 Start project
         form.start-project-content__form(action="#")
-          input(type='text' placeholder='* Name', require)
-          input(type='text' placeholder='* Email', require)
-          input(type='text' placeholder='* Message', require)
+          input(type='text' placeholder='* Name', id = 'name', require)
+          input(type='text' placeholder='* Email', id = 'email', require)
+          input(type='text' placeholder='* Message', id = 'message', require)
           .input-policy
-            input(type='checkbox' name = 'policy' require)
+            input(type='checkbox' name = 'policy' id = 'policy' require)
             span I have read the <a href='#'>privacy policy</a> ang agree to it
-          .button Write to us
+          .button(class='start-project') Write to us

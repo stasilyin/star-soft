@@ -1,12 +1,10 @@
 -var text1 = 'Ideological considerations of a higher order, as well as the constant information and propaganda support of our activities, require the definition and refinement of the personnel training system that meets the urgent needs.onstant information and propaganda support of our activit Ideological considerations of a higher order, as well as the strengthening and development of the structure...'
-mixin slide(title, text, img)
+mixin slide(img1, img2)
   .swiper-slide 
     .swiper-slide__content
-      h3=title
-      p=text
-      a.view-project(href='#') View
+      img(src=img1)
     .swiper-slide__img
-      img(src=img)
+      img(src=img2)
 
 section.our-project 
   .container 
@@ -16,8 +14,8 @@ section.our-project
       .button(class='button-blue') all projects
     .swiper-container 
       .swiper-wrapper 
-        +slide('ASJI COMPANY',text1,require('../../assets/images/block 2.png').default)
-        +slide('ASJI COMPANY',text1,require('../../assets/images/block 2.png').default)
+        +slide(require('../../assets/images/EcomPort.png').default,require('../../assets/images/MobPort.png').default)
+        +slide(require('../../assets/images/iotPort.png').default,require('../../assets/images/MobPort.png').default)
     .slider-buttons
       .swiper-button-prev
       .swiper-pagination

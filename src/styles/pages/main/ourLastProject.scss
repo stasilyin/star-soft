@@ -1,5 +1,10 @@
-.our-project .title {
-  margin-bottom: 4.4rem;
+.our-project {
+  .button-blue {
+    margin-bottom: 30px;
+  }
+  .title {
+    margin-bottom: 4.4rem;
+  }
 }
 
 .swiper-slide {
@@ -9,26 +14,22 @@
     width: 50%;
     box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.3);
     border-radius: 20px;
-    padding: 0 1.5rem;
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-top: 4.4rem;
-      margin-bottom: 1.9rem;
-    }
-    a {
-      margin-top: 30px;
-      float: right;
-      color: $btnColor;
+    overflow: hidden;
+    height: 408px;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
     }
   }
   &__img {
     width: 50%;
     border-radius: 20px;
+    overflow: hidden;
     filter: drop-shadow(4px 5px 20px rgba(172, 172, 172, 0.3));
+    height: 408px;
     img {
-      width: 100%;
+      max-width: 100%;
       object-fit: cover;
       object-position: center;
     }

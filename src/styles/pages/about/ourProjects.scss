@@ -30,7 +30,6 @@
     box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.3);
     &__img {
       width: 50%;
-      flex-basis: 50%;
       img {
         object-fit: cover;
         object-position: center;
@@ -62,6 +61,12 @@
   grid-template-areas: "active active";
 }
 .disable {
+  .about__our-projects__cards-item__img {
+    width: 590px;
+    height: 408px;
+    img {
+    }
+  }
 }
 .active {
   grid-area: active;
